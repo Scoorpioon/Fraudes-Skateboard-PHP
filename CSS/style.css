@@ -1,0 +1,2078 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600&display=swap');
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inconsolata', sans-serif;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Acessibility bar */
+#barra-de-acessibilidade {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+#atalhos li {
+    display: inline;
+
+}
+
+#atalhos li a {
+    color: black;
+    font-weight: bold;
+}
+
+#barra-de-acessibilidade #atalhos #pgaccess {
+    position: relative;
+    padding-left: 50%;
+
+}
+
+/* Header */
+header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 150px;
+
+    background-color: black;
+    border-bottom: gray;
+
+    border-bottom: 1px solid gray;
+    box-sizing: content-box;
+}
+
+input[type="text"], input[type="password"] {
+    transition: 0.5s ease-in-out;
+    margin-top: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 14px;
+    padding-left: 5px;
+    border: 1px solid gray;
+}
+
+.animacao-de-caixa:focus {
+    transition: 0.5s ease-in-out;
+    padding-left: 12px;
+
+    box-sizing: inherit;
+}
+
+.lupa {
+    position: relative;
+    bottom: 25px;
+    left: 270px;
+
+}
+
+.login {
+    color: white;
+}
+
+.pesquisa i {
+    color: black;
+}
+
+.pesquisa {
+    position: relative;
+    margin-top: 60px;
+    font-size: 20px;
+    right: 125px;
+    margin-left: 78%;
+
+
+}
+
+.caixa-de-login {
+    position: relative;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 50px;
+    right: 120px;
+    top: 2.6px;
+
+    font-size: 35px;
+    color: white;
+
+
+}
+
+.caixa-de-login .cadastrar-logar-lista {
+    transition: .5s ease-in-out;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    visibility: hidden;
+    bottom: 30px;
+    z-index: 0;
+
+}
+
+#botao-de-login:checked ~ .cadastrar-logar-lista {
+    transition: .5s;
+    bottom: 0;
+    visibility: visible;
+
+    z-index: 1;
+}
+
+.cadastrar-logar-lista li {
+    transition: .2s ease-in-out;
+    background-color: rgb(48, 48, 48);
+    border-bottom: 1px solid black;
+    padding: 5px;
+    color: white;
+
+}
+
+.cadastrar-logar-lista li:hover {
+    transition: .2s;
+    background-color: rgb(56, 56, 56);
+    color: white;
+
+}
+
+.cadastrar-logar-lista li a {
+    color: white;
+}
+
+#botao-de-login {
+    visibility: hidden;
+
+}
+
+label[for="botao-de-login"] {
+    cursor: pointer;
+
+}
+
+#logo {
+    padding-top: 7px;
+
+}
+
+/* Menu */
+#menu {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 3px;
+
+}
+
+#menu li {
+    transition: 0.7s ease-in-out;
+    position: relative;
+    display: inline;
+    color: white;
+    padding-right: 7px;
+
+}
+
+#menu li:hover {
+    padding: 0 10px;
+
+}
+
+#menu li a {
+    color: white;
+}
+
+/* Main */
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    min-height: 1000px;
+
+}
+
+#conteudo h1 {
+    font-size: 45px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.conteudo-noticias {
+    height: 1200px;
+
+}
+
+#conteudo .caixa-de-noticia {
+    width: 270px;
+    height: 270px;
+    margin-left: 5%;
+    margin-bottom: 25px;
+    box-shadow: 0 0 4px 0.5px black;
+
+
+}
+
+#conteudo .caixa-de-noticia img {
+    position: absolute;
+    width: 270px;
+    height: 270px;
+
+}
+
+
+#conteudo .noticias {
+    display: flex;
+}
+
+.noticias article {
+    width: 70%;
+    height: auto;
+    padding: 15px 0 0 15px;
+    color: white;
+
+    z-index: 100;
+}
+
+.noticias article:before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 70%;
+    height: 250px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    opacity: 0.8;
+
+    z-index: -1;
+}
+
+.noticias article h2 {
+    font-size: 32px;
+    margin: 10px;
+
+    z-index: 2;
+}
+
+.noticias article p {
+    font-size: 19px;
+    margin: 10px;
+
+    z-index: 3;
+}
+
+.noticias article a{
+    position: relative;
+    left: 96%;
+    top: 120px;
+    color: white;
+
+}
+
+.noticias article #first-link {
+    top: 100px;
+
+}
+
+#caixa-de-titulo{
+    margin-left: 50%;
+    position: absolute;
+}
+
+.noticias article a{
+    position: relative;
+    left: 96%;
+    top: 120px;
+
+}
+
+.noticias article #first-link {
+    top: 100px;
+
+}
+
+/* Página de login */
+.conteudo-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+
+}
+
+#caixa-de-login {
+    position: relative;
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    bottom: 120px;
+
+}
+
+#caixa-de-login fieldset {
+   /* box-shadow: 0 0 3px 0.2px black; */ /* Caixa apenas com sombras */
+    width: 650px;
+    height: 550px;
+    text-align: center;
+
+    border: 0.5px solid gray; /* Caixa com borda, sem sombras */
+    border-radius: 50px;
+}
+
+#caixa-de-login fieldset legend {
+    position: relative;
+    text-align: center;
+    top: 20px;
+    margin-bottom: 75px;
+    font-weight: bold;
+    font-size: 26px;
+
+    border-top: 0.5px solid gray;
+    padding-top: 12px;
+    box-sizing: content-box;
+}
+
+#caixa-de-login fieldset input[type="text"] {
+    border: 1px solid gray;
+    margin-bottom: 22px;
+
+}
+
+#caixa-de-login fieldset input[type="submit"] {
+    margin-top: 20px;
+    transition: 0.5s ease-in-out;
+    padding: 8px 40px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+#caixa-de-senha {
+    margin-bottom: 15px;
+
+}
+
+.conteudo-login fieldset a {
+    position: relative;
+    font-size: 14px;
+    color: gray;
+    bottom: 20px;
+
+}
+
+.conteudo-login fieldset .link-cadastro {
+    color: black;
+    top: 100px;
+    font-size: 18px;
+
+}
+
+.conteudo-login fieldset a:hover {
+    text-decoration: underline;
+}
+
+/* Página de cadastro */
+.conteudo-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+
+}
+
+.conteudo-cadastro #caixa-de-cadastro {
+    position: relative;
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    bottom: 120px;
+
+}
+
+#caixa-de-cadastro fieldset {
+   /* box-shadow: 0 0 3px 0.2px black; */ /* Caixa apenas com sombras */
+    width: 1050px;
+    height: 750px;
+    text-align: center;
+
+    border: 0.5px solid gray; /* Caixa com borda, sem sombras */
+    border-radius: 50px;
+}
+
+#caixa-de-cadastro fieldset legend {
+    position: relative;
+    text-align: center;
+    top: 20px;
+    margin-bottom: 75px;
+    font-weight: bold;
+    font-size: 26px;
+
+    border-top: 0.5px solid gray;
+    padding-top: 12px;
+    box-sizing: content-box;
+}
+
+#caixa-de-cadastro fieldset input[type="text"] {
+    border: 1px solid gray;
+    margin-bottom: 22px;
+
+}
+
+#caixa-de-cadastro fieldset input[type="submit"] {
+    margin-top: 20px;
+    transition: 0.5s ease-in-out;
+    padding: 8px 40px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+#caixa-de-senha {
+    margin-bottom: 15px;
+
+}
+
+.required:after {
+    content: "\00a0*";
+    color: rgb(96, 0, 0);
+
+}
+
+/* Fale conosco */
+fieldset{
+    margin: 32px 32px;
+    padding: 20px;
+    border: 1.2px solid black;
+    border-radius: 2px;
+}
+
+.conteudo-fale-conosco input[type="text"] {
+    width: 425px;
+    height: 45px;
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+
+.conteudo-fale-conosco input[type="date"] {
+    width: 200px;
+    height: 30px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+
+}
+
+.conteudo-fale-conosco select {
+    width: 200px;
+    height: 30px;
+
+}
+
+.conteudo-fale-conosco textarea {
+    width: 350px;
+    height: 210px;
+    margin-top: 5px;
+    resize: none;
+
+}
+
+.conteudo-fale-conosco .buttons {
+    position: relative;
+    margin-left: 30px;
+    bottom: 15px;
+
+}
+
+.conteudo-fale-conosco #Enviar, #Limpar {
+    transition: .5s ease-in-out;
+    width: 86px;
+    height: 36px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+
+.conteudo-fale-conosco #Enviar:hover, #Limpar:hover {
+    transition: .5s ease-in-out;
+    background-color: rgb(245, 243, 243);
+    cursor: pointer;
+
+}
+
+/* Página de cadastro */
+.conteudo-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+
+}
+
+.conteudo-cadastro #caixa-de-cadastro {
+    position: relative;
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    bottom: 120px;
+
+}
+
+#caixa-de-cadastro fieldset {
+   /* box-shadow: 0 0 3px 0.2px black; */ /* Caixa apenas com sombras */
+    width: 1050px;
+    height: 750px;
+    text-align: center;
+
+    border: 0.5px solid gray; /* Caixa com borda, sem sombras */
+    border-radius: 50px;
+}
+
+#caixa-de-cadastro fieldset legend {
+    position: relative;
+    text-align: center;
+    top: 20px;
+    margin-bottom: 75px;
+    font-weight: bold;
+    font-size: 26px;
+
+    border-top: 0.5px solid gray;
+    padding-top: 12px;
+    box-sizing: content-box;
+}
+
+#caixa-de-cadastro fieldset input[type="text"] {
+    border: 1px solid gray;
+    margin-bottom: 22px;
+
+}
+
+#caixa-de-cadastro fieldset input[type="submit"] {
+    margin-top: 20px;
+    transition: 0.5s ease-in-out;
+    padding: 8px 40px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+#caixa-de-senha {
+    margin-bottom: 15px;
+
+}
+
+.required:after {
+    content: "\00a0*";
+    color: rgb(96, 0, 0);
+
+}
+
+/* Páginas de venda */
+.conteudo-vendas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+  
+}
+  
+.linha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 10px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+  
+#secao-de-vendas .linha:nth-child(2) {
+    margin-top: 140px;
+  
+}
+  
+.caixa-de-venda {
+    width: 230px;
+    height: 290px;
+    box-shadow: 0 0 3px 0.5px black;
+    margin: 0 20px 200px 20px;
+  
+   /* border: 2px solid black; */
+}
+  
+.conteudo-vendas h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 50px; 
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 24px;
+    width: 20%;
+}
+  
+.caixa-de-venda img {
+    width: 230px;
+    height: 290px;
+  
+}
+  
+.caixa-de-venda article {
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 200px;
+    margin-bottom: 55px;
+    border: 1px solid rgb(46, 46, 46);
+  
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-text p {
+    position: relative;
+    font-size: 20px;
+    top: 10px;
+}
+  
+.caixa-de-venda article a {
+    transition: .5s ease-in-out;
+    position: relative;
+    color: gray;
+    font-weight: bold;
+    top: 50px;
+    padding: 5px;
+    border: 1px solid gray;
+  
+}
+  
+.caixa-de-venda article a:hover {
+    transition: .5s;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(91, 91, 91);
+    color: white;
+}
+
+/* Página de acessibilidade */
+.conteudo-acessibilidade {
+    font-size: 20px;
+    padding-left: 12px;
+
+}
+
+/* Footer */
+#rodape {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    border-top: 1px solid gray;
+}
+
+.conteudo-do-rodape {
+    color: white;
+    display: flex;
+    width: 100%;
+    height: auto;
+   /* border: 3px solid red; */
+
+}
+
+
+.conteudo-principal-rodape {
+    display: flex;
+    width: 100%;
+    
+    flex-direction: column;
+}
+
+.conteudo-principal-rodape p {
+    margin-bottom: 25px;
+}
+
+.conteudo-principal-rodape a {
+    font-size: 25px;
+    color: rgb(222, 222, 222);
+    
+}
+
+.conteudo-principal-rodape a:hover {
+    text-decoration: underline;
+    
+}
+
+.conteudo-principal-rodape span {
+    font-size: 20px;
+    
+}
+
+.conteudo-principal-rodape div {
+    position: relative;
+    text-align: center;
+    width: 500px
+}
+
+/* .email-box {
+    left: 1600px;
+    top: 150px;
+    
+} */
+
+.email-box button {
+    transition: 0.5s ease-in-out;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 2px solid gray;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-left: 4.3px;
+}
+
+.email-box button:hover {
+    transition: 0.7s;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    
+}
+
+.conteudo-principal-rodape div input {
+    width: 390px;
+    
+}
+
+.mid-box {
+    font-size: 18px;
+    width: 350px;
+    justify-content: center;
+    text-align: center;
+    left: 700px;
+    top: 90px;
+    
+}
+
+.canto-esquerdo-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid gray;
+    width: 475px;
+    margin-right: 5px;
+}
+
+.canto-esquerdo-rodape h2 {
+    position: relative;
+    color: white;
+    bottom: 30px;
+    font-size: 30px;
+
+}
+
+.canto-esquerdo-rodape .redes-sociais {
+    font-size: 28px;
+    width: 350px;
+    padding-left: 50px;
+    list-style-type: none;
+}
+
+.canto-esquerdo-rodape h2 {
+    cursor: default;
+
+}
+
+.redes-sociais li {
+    margin-bottom: 8px;
+    color: white;
+
+}
+
+.redes-sociais li a {
+    transition: 0.5s ease-in-out;
+    color: white;
+}
+
+.redes-sociais li a:hover {
+    transition: 0.5s;
+    margin-left: 5px;
+}
+
+.phone-number {
+    cursor: default;
+}
+
+/* Página de perfil */
+#perfil {
+    min-height: 1500px;
+
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 5120px) {
+    .email-box {
+        left: 75%;
+        top: 150px;
+
+    }
+
+    .noticias article a {
+        left: 1660px;
+        top: 100px;
+        text-decoration: underline;
+
+    }
+
+    .noticias:nth-child(4) article a {
+        top: 110px;
+
+    }
+
+    .noticias:nth-child(2) article a {
+        top: 90px;
+        
+    }
+    .noticias:nth-child(3) article a {
+        top: 115px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 1920px) {
+    .email-box {
+        top: 140px;
+        left: 65%;
+        
+    }
+
+    .mid-box {
+        left: 450px;
+
+    }
+
+    .caixa-de-login {
+        right: 11%;
+
+    }
+
+    .pesquisa {
+        right: 220px;
+
+    }
+
+    .noticias article a {
+        left: 1220px;
+        top: 100px;
+        text-decoration: underline;
+
+    }
+
+    .noticias:nth-child(3) article a {
+        top: 65px;
+
+    }
+    
+}
+
+@media screen and (max-width: 1807px) {
+    .caixa-de-login {
+        right: 13.5%;
+
+    }
+
+    .pesquisa {
+        right: 13.5%;
+
+    }
+
+    .email-box {
+        left: 60%;
+
+    }
+
+    .noticias article a {
+        left: 1130px;
+        top: 95px;
+        text-decoration: underline;
+
+    }
+
+    .noticias:nth-child(2) article a {
+        top: 78px;
+
+    }
+
+}
+
+@media screen and (max-width: 1615px) {
+    #barra-de-acessibilidade #atalhos #pgaccess {
+        padding-left: 40%;
+
+    }
+
+    .caixa-de-login {
+        right: 20%;
+
+    }
+
+    .pesquisa {
+        right: 20%;
+
+    }
+
+    .email-box {
+        left: 57%;
+
+    }
+
+    .mid-box {
+        left: 30%;
+
+    }
+
+    .noticias article a {
+        left: 1000px;
+        top: 95px;
+        text-decoration: underline;
+
+    }
+
+    .noticias:nth-child(3) article a {
+        top: 45px;
+
+    }
+
+}
+
+@media screen and (max-width: 1524px) {
+    .mid-box {
+        left: 28.5%;
+
+    }
+
+    .email-box {
+        left: 52%;
+
+    }
+
+    .noticias article a {
+        left: 950px;
+        top: 95px;
+        text-decoration: underline;
+
+    }
+
+    .noticias:nth-child(4) article a {
+        top: 75px;
+
+    }
+
+}
+
+@media screen and (max-width: 1434px) {
+    #barra-de-acessibilidade #atalhos #pgaccess {
+        padding-left: 32%;
+
+    }
+
+    .caixa-de-login {
+        right: 22%;
+
+    }
+
+    .pesquisa {
+        right: 22%;
+
+    }
+
+    .mid-box {
+        left: 27%;
+
+    }
+
+    .email-box {
+        left: 49%;
+
+    }
+
+    .noticias article a {
+        left: 865px;
+        top: 90px;
+        text-decoration: underline;
+
+    }
+
+    .noticias:nth-child(4) article a {
+        top: 78px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 1326px) {
+    .caixa-de-login {
+        right: 27%;
+        
+    }
+    
+    .pesquisa {
+        right: 27%;
+        
+    }
+    
+    .mid-box {
+        left: 25%;
+        
+    }
+    
+    .email-box {
+        left: 45%;
+        
+    }
+
+    .noticias article a {
+        left: 800px;
+        top: 95px;
+        text-decoration: underline;
+
+    }
+
+    .noticias:nth-child(2) article a {
+        top: 55px;
+
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .caixa-de-login {
+        right: 27%;
+
+    }
+
+    .pesquisa {
+        right: 27%;
+
+    }
+
+    .noticias article a {
+        left: 760px;
+        top: 90px;
+        text-decoration: underline;
+
+    }
+
+    .noticias:nth-child(4) article a {
+        top: 45px;
+
+    }
+
+}
+
+@media screen and (max-width: 1238px) {
+    #barra-de-acessibilidade #atalhos #pgaccess {
+        padding-left: 27%;
+
+    }
+
+    .caixa-de-login {
+        right: 31%;
+
+    }
+
+    .pesquisa {
+        right: 31%;
+
+    }
+
+    .mid-box {
+        left: 22%;
+
+    }
+
+    .email-box {
+        left: 41%;
+
+    }
+
+    .noticias article a {
+        left: 730px;
+        top: 95px;
+        text-decoration: underline;
+
+    }
+
+    .noticias:nth-child(3) article a {
+        top: 25px;
+
+    }
+
+}
+
+@media screen and (max-width: 1181px) {
+    #barra-de-acessibilidade #atalhos #pgaccess {
+        padding-left: 23%;
+
+    }
+
+    .caixa-de-login {
+        right: 31%;
+
+    }
+
+    .pesquisa {
+        right: 31%;
+
+    }
+
+    .mid-box {
+        left: 19.5%;
+
+    }
+
+    .email-box {
+        left: 20.5%;
+
+    }
+
+    .noticias article a {
+        left: 700px;
+
+    }
+
+    .noticias:nth-child(3) article a {
+        top: 25px;
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #atalhos li:nth-child(1), #atalhos li:nth-child(2), #atalhos li:nth-child(3) {
+        display: none;
+
+
+    }
+
+    #pgaccess, .contraste, .semcontraste, .fonte {
+        font-size: 20px;
+        position: relative;
+        right: 22%;
+        margin-right: 10px;
+
+    }
+
+    .caixa-de-login .cadastrar-logar-lista {
+        width: 120px;
+        height: 150px;
+
+    }
+
+    #caixa-de-cadastro fieldset {
+        width: 800px;
+
+    }
+    
+    .noticias article h2 {
+        font-size: 19px;
+        
+    }
+    
+    .noticias article a {
+        top: 18%;
+        left: 88%;
+        
+    }
+
+    .noticias:nth-child(3) article a {
+        top: 10%;
+
+    }
+
+    .noticias article, .noticias article::before {
+        width: 65%;
+
+    }
+
+    .caixa-de-login {
+        right: 37%;
+
+    }
+
+    .pesquisa {
+        right: 37%;
+
+    }
+        
+    .mid-box {
+        left: 15%;
+
+    }
+
+    .email-box {
+        top: 140px;
+        left: 15.5%;
+
+    }
+
+    #rodape input {
+        width: 29%;
+    }
+    
+    .noticias article a {
+        left: 540px;
+        text-decoration: underline;
+
+    }
+
+    .noticias:nth-child(3) article a {
+        top: 35px;
+
+    }
+
+    .noticias:nth-child(2) article a {
+        top: 35px;
+
+    }
+
+    .noticias:nth-child(4) article a {
+        top: 75px;
+
+    }
+    
+
+}
+
+@media screen and (max-width: 912px) {
+    #pgaccess, .contraste, .semcontraste, .fonte {
+        font-size: 17.3px;
+
+    }
+
+    .caixa-de-login {
+        right: 44%;
+
+    }
+
+    .pesquisa {
+        right: 45%;
+
+    }
+
+    .email-box {
+        left: 3%;
+
+    }
+
+    .mid-box {
+        left: 4.5%;
+
+    }
+
+    .noticias article, .noticias article::before {
+        width: 60%;
+        border-radius: 1px;
+    }
+
+    .noticias article p, .noticias article a {
+        display: none;
+
+    }
+
+    .noticias article h2 {
+        position: relative;
+        font-size: 32px;
+        top: 40px;
+
+    }
+
+    .noticias article h2:hover {
+        text-decoration: underline;
+
+    }
+
+
+}
+
+@media screen and (max-width: 822px) {
+    .caixa-de-login {
+        margin: 60px 0;
+        right: 49%;
+
+    }
+
+    .pesquisa {
+        right: 51%
+
+    }
+
+    #rodape .mid-box {
+        left: 26%;
+        font-size: 16px;
+        width: 50%;
+    }
+
+    .mid-box a {
+        font-size: 22px;
+
+    }
+
+    #rodape .email-box {
+        left: 11%;
+        width: 80%;
+
+    }
+
+    #caixa-de-login fieldset, #caixa-de-cadastro fieldset {
+        width: 620px;
+
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .caixa-de-login {
+        right: 50%;
+
+    }
+
+}
+
+@media screen and (max-width: 790px) {
+    #barra-de-acessibilidade #atalhos #pgaccess {
+        padding-left: 43%;
+
+    }
+
+    .caixa-de-login {
+        right: 48%;
+
+    }
+
+    .pesquisa {
+        right: 48%;
+
+    }
+    
+    .noticias {
+        width: 700px;
+
+    }
+
+    .noticias article::before {
+        width: 58%;
+
+    }
+
+    .canto-esquerdo-rodape .redes-sociais {
+        padding-left: 20px;
+        font-size: 23px;
+        width: 250px;
+
+    }
+
+    .mid-box {
+        top: 75px;
+
+    }
+
+    .email-box {
+        top: 120px;
+
+    }
+
+    .linha .caixa-de-venda {
+        width: 28%;
+
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo-vendas h1 {
+        width: 40%;
+
+    }
+    
+    .conteudo-vendas .linha {
+        width: 700px;
+
+    }
+
+    .conteudo-vendas .caixa-de-venda img {
+        width: 180px;
+
+    }
+    
+    .caixa-de-login {
+        right: 55%;
+
+    }
+
+    .pesquisa {
+        right: 57%;
+
+    }
+
+    #caixa-de-login fieldset, #caixa-de-cadastro fieldset {
+        margin-top: 100px;
+        width: 80%;
+        padding: 10px 120px;
+
+    }
+}
+
+@media screen and (max-width: 717px) {
+    .caixa-de-login{
+        right: 64%
+    }
+    .pesquisa{
+        right: 65%
+    }
+    .noticias article:before{
+        width: 55.5%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 540px) {
+    .conteudo-vendas .linha {
+        width: 400px;
+
+    }
+
+    .conteudo-cadastro #caixa-de-cadastro fieldset, .conteudo-login #caixa-de-login fieldset {
+        padding: 10px 0;
+
+    }
+
+    #pgaccess, .contraste, .semcontraste, .fonte {
+        font-size: 12px;
+
+    }
+
+    #barra-de-acessibilidade #atalhos #pgaccess {
+        padding-left: 38%;
+
+    }
+
+    .caixa-de-login .cadastrar-logar-lista {
+        display: none;
+    }
+
+    #botao-de-login:checked ~ .cadastrar-logar-lista {
+        display: block;
+        right: 80px;
+
+    }
+
+    #conteudo {
+        min-height: 850px;
+
+    }
+
+    #menu {
+        padding-top: 5px;
+        font-size: 15px;
+
+    }
+
+    .caixa-de-login {
+        right: 60%;
+
+    }
+
+    .pesquisa {
+        right: 62%;
+
+    }
+
+    .lupa {
+        left: 84%;
+
+    }
+
+    
+    .pesquisa input {
+        width: 200px;
+        
+    }
+    
+    .noticias {
+        box-shadow: 0 0 0 0;
+        padding-left: 50px;
+        height: 180px;
+        width: 0;
+        padding-bottom: 210px;
+        
+    }
+
+    #conteudo .noticias:nth-child(4) {
+        padding-bottom: 0;
+
+    }
+
+    #rodape .conteudo-principal-rodape .mid-box {
+        left: 25%;
+        width: 150px;
+        font-size: 14px;
+
+    }
+
+    #rodape .conteudo-principal-rodape .mid-box a {
+        font-size: 14px;
+
+    }
+
+    .email-box {
+        top: 110px;
+
+    }
+
+    #rodape #email-input {
+        width: 70px;
+
+    }
+    
+    .canto-esquerdo-rodape {
+        width: 250px;
+
+    }
+
+    .canto-esquerdo-rodape h2 {
+        right: 7px;
+        font-size: 20px;
+
+    }
+
+    .canto-esquerdo-rodape a {
+        padding-left: 22px;
+        font-size: 18px; 
+
+    }
+
+    #conteudo .noticias .caixa-de-noticia img {
+        width: 160px;
+        height: 160px;
+
+        z-index: 1000;
+    }
+
+    .noticias article {
+        width: 300px;
+        height: 100px;
+        margin-left: 30px;
+        left: 50px;
+
+    }
+
+    .noticias article::before {
+        width: 450px;
+        height: 130px;
+        margin-left: 30px;
+        left: 50px;
+
+        z-index: 1;
+    }
+
+    .noticias article h2 {
+        width: 200px;
+        font-size: 15px;
+        top: 10px;
+        left: 160px;
+        
+
+    }
+
+    body .conteudo-vendas {
+        height: 3500px;
+
+    }
+
+    .conteudo-vendas h1 {
+        width: 65%;
+
+    }
+
+    .conteudo-vendas .linha {
+        flex-direction: column;
+
+    }
+
+    .conteudo-vendas .caixa-de-venda {
+        width: 200px;
+        margin-bottom: 250px;
+
+    }
+    
+    .caixa-de-venda img {
+        width: 200px;
+    }
+
+    .conteudo-fale-conosco #contato fieldset {
+        width: 10%;
+
+    }
+
+    #caixa-de-login fieldset, #caixa-de-cadastro fieldset {
+        height: 325px;
+        width: 50%;
+        border: none;
+
+        z-index: 1;
+    }
+
+    #caixa-de-login fieldset legend, #caixa-de-cadastro fieldset legend {
+        border: none;
+
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .conteudo-vendas .linha {
+        width: 350px;
+
+    }
+
+    #pgaccess, .contraste, .semcontraste, .fonte {
+        font-size: 10px;
+
+    }
+
+    #barra-de-acessibilidade #atalhos #pgaccess {
+        padding-left: 20%;
+
+    }
+
+    .caixa-de-login .cadastrar-logar-lista {
+        display: none;
+    }
+
+    #botao-de-login:checked ~ .cadastrar-logar-lista {
+        display: block;
+        right: 80px;
+
+    }
+
+    #conteudo {
+        min-height: 750px;
+
+    }
+
+    #menu {
+        padding-top: 5px;
+        font-size: 15px;
+
+    }
+
+    .caixa-de-login {
+        right: 73.5%;
+
+    }
+
+    .pesquisa {
+        right: 75%;
+
+    }
+
+    .lupa {
+        left: 84%;
+
+    }
+    
+    .pesquisa input {
+        width: 152px;
+        
+    }
+    
+    .noticias {
+        box-shadow: 0 0 0 0;
+        padding-left: 10px;
+        height: 180px;
+        width: 0;
+        
+    }
+
+    #conteudo .noticias:nth-child(4) {
+        padding-bottom: 0;
+
+    }
+
+    #rodape .conteudo-principal-rodape .mid-box {
+        left: 15%;
+        width: 150px;
+        font-size: 14px;
+
+    }
+
+    #rodape .conteudo-principal-rodape .mid-box a {
+        font-size: 14px;
+
+    }
+
+    .email-box {
+        top: 110px;
+
+    }
+
+    #rodape #email-input {
+        width: 70px;
+
+    }
+    
+    .canto-esquerdo-rodape {
+        width: 175px;
+
+    }
+
+    .canto-esquerdo-rodape h2 {
+        right: 7px;
+        font-size: 20px;
+
+    }
+
+    .canto-esquerdo-rodape a {
+        padding-left: 22px;
+        font-size: 18px; 
+
+    }
+
+    #conteudo .noticias .caixa-de-noticia img {
+        width: 120px;
+        height: 120px;
+
+        z-index: 1000;
+    }
+
+    .noticias article {
+        width: 300px;
+        height: 100px;
+        margin-left: 30px;
+        left: 50px;
+
+    }
+
+    .noticias article::before {
+        width: 300px;
+        height: 100px;
+        margin-left: 30px;
+        left: 50px;
+
+        z-index: 1;
+    }
+
+    .noticias article h2 {
+        width: 200px;
+        font-size: 13px;
+        top: 10px;
+        left: 70px;
+        
+
+    }
+
+    body .conteudo-vendas {
+        height: 3500px;
+
+    }
+
+    .conteudo-vendas h1 {
+        width: 65%;
+
+    }
+
+    .conteudo-vendas .linha {
+        flex-direction: column;
+
+    }
+
+    .conteudo-vendas .caixa-de-venda {
+        width: 200px;
+        margin-bottom: 250px;
+
+    }
+    
+    .caixa-de-venda img {
+        width: 200px;
+    }
+
+    .conteudo-fale-conosco #contato fieldset {
+        width: 10%;
+
+    }
+
+    #caixa-de-login fieldset, #caixa-de-cadastro fieldset {
+        padding: 0;
+        margin-top: 100px;
+        width: 50%;
+
+    }
+
+    #caixa-de-login fieldset legend, #caixa-de-cadastro fieldset legend {
+        border: none;
+
+    }
+
+    .conteudo-fale-conosco fieldset {
+        width: 400px;
+        margin: 20px 0;
+        padding: 30px;
+
+    }
+
+    .conteudo-fale-conosco fieldset:nth-child(1), .conteudo-fale-conosco fieldset:nth-child(2) {
+        position: relative;
+        left: 5%;
+
+    }
+
+    .conteudo-fale-conosco fieldset input[type="text"] {
+        width: 300px;
+
+    }
+
+    .conteudo-fale-conosco .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .buttons input[type="submit"] {
+        margin-right: 10px;
+
+    }
+}
+
+@media screen and (max-width: 393px) {
+    .conteudo-vendas .linha {
+        width: 350px;
+
+    }
+
+    .conteudo-fale-conosco textarea {
+        width: 300px;
+
+    }
+
+    .conteudo-fale-conosco fieldset:nth-child(3) {
+        position: relative;
+        left: 5%;
+
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .conteudo-vendas .linha {
+        width: 350px;
+
+    }
+    
+    .conteudo-fale-conosco fieldset {
+        width: 300px;
+        margin: 20px 0;
+        padding: 20px;
+
+    }
+
+    .conteudo-fale-conosco fieldset:nth-child(1), .conteudo-fale-conosco fieldset:nth-child(2) {
+        position: relative;
+        left: 5%;
+
+    }
+
+    .conteudo-fale-conosco fieldset:nth-child(3) {
+        position: relative;
+        left: 2%;
+
+    }
+
+
+    .conteudo-fale-conosco textarea {
+        width: 320px;
+        padding: 5px;
+
+    }
+    
+    .caixa-de-login {
+        right: 75%;
+
+    }
+
+    .pesquisa {
+        right: 76%;
+
+    }
+
+    .noticias article::before {
+        width: 285px;
+
+    }
+
+    #rodape .conteudo-principal-rodape .mid-box {
+        left: 10%;
+
+    }
+
+    #rodape .email-box {
+        left: 5%;
+        width: 170px;
+
+    }
+
+    #caixa-de-login fieldset, #caixa-de-cadastro fieldset {
+        padding: 0;
+        margin: 180px 0;
+
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    #barra-de-acessibilidade #atalhos {
+        padding-left: 0;
+
+    }
+
+    #pgaccess {
+        padding-left: 20%;
+
+    }
+
+    .conteudo-vendas .linha {
+        width: 300px;
+
+    }
+
+    .caixa-de-login {
+        right: 82%;
+
+    }
+
+    .pesquisa {
+        right: 82%;
+
+    }
+    
+    #menu {
+        font-size: 14.5px;
+
+    }
+
+    .noticias article::before {
+        width: 270px;
+
+    }
+
+    .conteudo-login #caixa-de-login fieldset, .conteudo-cadastro #caixa-de-cadastro fieldset {
+        height: 125px;
+        margin-top: 20px;
+
+    }
+}
+
+@media screen and (max-width: 280px) {
+    #conteudo {
+        min-height: 1100px;
+
+    }
+
+    .caixa-de-login {
+        right: 65%;
+        
+    }
+
+    .pesquisa a {
+        color: white;
+        right: 67%;
+
+    }
+
+    .pesquisa input {
+        display: none;
+
+    }
+
+    .noticias article h2 {
+        width: 140px;
+        font-size: 14px;
+
+    }
+
+    .noticias article::before {
+        width: 198px;
+
+    }
+
+    #menu {
+        font-size: 11px;
+
+    }
+
+    .email-box {
+        display: none;
+
+    }
+
+    #rodape .conteudo-principal-rodape .mid-box {
+        width: 50px;
+        left: 18%;
+
+    }
+
+    .canto-esquerdo-rodape {
+        padding: 0;
+        width: 180px;
+
+    }
+
+    .canto-esquerdo-rodape .redes-sociais {
+        padding: 0 20px;
+        
+
+    }
+
+    #caixa-de-login fieldset, #caixa-de-cadastro fieldset {
+        padding: 0;
+        width: 0;
+
+    }
+
+    #caixa-de-cadastro fieldset input[type="text"], #caixa-de-login fieldset input[type="text"] {
+        width: 230px;
+        
+    }
+}
+
+/* Desenvolvido por Gabriel A, Matheus Godoy, Alef Menezes e Matheus Ramos */
