@@ -88,7 +88,7 @@
                                 <h3>Rolamento Bones - Reds Precision Bearings</h3>
                                 <p>R&#36; 199,99</p>
                             </div>
-                            <a href="#">Comprar essa porra</a>
+                            <a href="#">Comprar</a>
                         </article>                                  
                     </div>
                     <div class="caixa-de-venda">
@@ -98,7 +98,7 @@
                                 <h3>Rolamento Toy Machine</h3>
                                 <p>R&#36; 189,90</p>
                             </div>
-                            <a href="#">Comprar essa porra</a>
+                            <a href="#">Comprar</a>
                         </article>                              
                     </div>
                     <div class="caixa-de-venda">
@@ -108,7 +108,7 @@
                                 <h3>Rolamento Bronson Speed G2</h3>
                                 <p>R&#36; 139,90</p>
                             </div>
-                            <a href="#">Comprar essa porra</a>
+                            <a href="#">Comprar</a>
                         </article>                            
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                                 <h3>Rolamento SpitFire Burners</h3>
                                 <p>R&#36; 248,99</p>
                             </div>
-                            <a href="#">Comprar essa porra</a>
+                            <a href="#">Comprar</a>
                         </article>                        
                     </div>
                     <div class="caixa-de-venda">
@@ -130,7 +130,7 @@
                                 <h3>Rolamento Black Sheep Serie Gold</h3>
                                 <p>R&#36; 99,90</p>
                             </div>
-                            <a href="#">Comprar essa porra</a>
+                            <a href="#">Comprar</a>
                         </article>                        
                     </div>
                     <div class="caixa-de-venda">
@@ -140,7 +140,7 @@
                                 <h3>Rolamento Chaze - Abec 9</h3>
                                 <p>R&#36; 97,90</p>
                             </div>
-                            <a href="#">Comprar essa porra</a>
+                            <a href="#">Comprar</a>
                         </article>                        
                     </div>
                 </div>
