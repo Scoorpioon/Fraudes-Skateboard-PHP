@@ -87,7 +87,7 @@
                             <h3>Lixa Jessup Hentai</h3>
                             <p>R&#36; 99,99</p>
                         </div>
-                        <a href="#">Compra essa porra</a>
+                        <a href="#">Comprar</a>
                     </article>                                  
                 </div>
                 <div class="caixa-de-venda">
@@ -97,7 +97,7 @@
                             <h3>Lixas Jessup Otaku</h3>
                             <p>R&#36; 99,99</p>
                         </div>
-                        <a href="#">Comprar essa porra</a>
+                        <a href="#">Comprar</a>
                     </article>                              
                 </div>
                 <div class="caixa-de-venda">
@@ -107,7 +107,7 @@
                             <h3>Lixas Jessup</h3>
                             <p>R&#36; 59,99</p>
                         </div>
-                        <a href="#">Comprar essa porra</a>
+                        <a href="#">Comprar</a>
                     </article>                            
                 </div>
             </div>
@@ -119,7 +119,7 @@
                             <h3>Lixas Jessup Naruto</h3>
                             <p>R&#36; 99,99</p>
                         </div>
-                        <a href="#">Comprar essa porra</a>
+                        <a href="#">Comprar</a>
                     </article>                        
                 </div>
                 <div class="caixa-de-venda">
@@ -129,7 +129,7 @@
                             <h3>Lixas Jessup</h3>
                             <p>R&#36; 68,99</p>
                         </div>
-                        <a href="#">Comprar essa porra</a>
+                        <a href="#">Comprar</a>
                     </article>                        
                 </div>
                 <div class="caixa-de-venda">
@@ -139,7 +139,7 @@
                             <h3>Lixas Jessup</h3>
                             <p>R&#36; 59,99</p>
                         </div>
-                        <a href="#">Comprar essa porra</a>
+                        <a href="#">Comprar</a>
                     </article>                        
                 </div>
             </div>
