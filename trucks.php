@@ -87,7 +87,7 @@
                             <h3>Trucks Independent T 139mm</h3>
                             <p>R&#36; 699,99</p>
                         </div>
-                        <a href="#">Compra essa porra</a>
+                        <a href="#">Compra</a>
                     </article>                                  
                 </div>
                 <div class="caixa-de-venda">
@@ -97,7 +97,7 @@
                             <h3>Trucks Independent Pro Model Milton Martinez T 159mm</h3>
                             <p>R&#36; 999,99</p>
                         </div>
-                        <a href="#">Comprar essa porra</a>
+                        <a href="#">Comprar</a>
                     </article>                              
                 </div>
                 <div class="caixa-de-venda">
@@ -107,7 +107,7 @@
                             <h3>Truck Venture Pro Model Yuto Horigome T 159mm</h3>
                             <p>R&#36; 1.004,99</p>
                         </div>
-                        <a href="#">Comprar essa porra</a>
+                        <a href="#">Comprar</a>
                     </article>                            
                 </div>
             </div>
@@ -119,7 +119,7 @@
                             <h3>Truck Venture T 129mm</h3>
                             <p>R&#36; 799,99</p>
                         </div>
-                        <a href="#">Comprar essa porra</a>
+                        <a href="#">Comprar</a>
                     </article>                        
                 </div>
                 <div class="caixa-de-venda">
@@ -129,7 +129,7 @@
                             <h3>Truck Thunder Pro Model Ishod Wair T 149mm</h3>
                             <p>R&#36; 999,99</p>
                         </div>
-                        <a href="#">Comprar essa porra</a>
+                        <a href="#">Comprar</a>
                     </article>                        
                 </div>
                 <div class="caixa-de-venda">
@@ -139,7 +139,7 @@
                             <h3>Truck Thunder Pro Model Kylie Walker T 149mm</h3>
                             <p>R&#36; 899,99</p>
                         </div>
-                        <a href="#">Comprar essa porra</a>
+                        <a href="#">Comprar</a>
                     </article>                        
                 </div>
             </div>
